@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs</title>
+</head>
+<body>
+    <h1>Browse Jobs</h1>
+
+    <!-- Job Listings -->
+    <ul id="jobListings">
+        <?php
+        // PHP code to fetch and display job listings (replace with your database or file retrieval logic)
+        $jobListings = [
+            // Example job listings (you can fetch these from your database or file)
+            [
+                'jobTitle' => 'Web Developer',
+                'jobDescription' => 'Join our team as a web developer and create amazing websites.',
+                'jobLocation' => 'New York, NY',
+                'companyName' => 'ABC Web Solutions',
+                'contactEmail' => 'jobs@abcwebsolutions.com',
+                'applicationLink' => 'https://example.com/apply/web-developer',
+            ],
+            [
+                'jobTitle' => 'Graphic Designer',
+                'jobDescription' => 'Looking for a creative graphic designer to join our design team.',
+                'jobLocation' => 'Los Angeles, CA',
+                'companyName' => 'Design Studio X',
+                'contactEmail' => 'designstudiox@gmail.com',
+                'applicationLink' => 'https://example.com/apply/graphic-designer',
+            ],
+        ];
+
+        foreach ($jobListings as $job) {
+            echo '<li>';
+            echo '<h2>' . $job['jobTitle'] . '</h2>';
+            echo '<p>' . $job['jobDescription'] . '</p>';
+            echo '<p><strong>Location:</strong> ' . $job['jobLocation'] . '</p>';
+            echo '<p><strong>Company:</strong> ' . $job['companyName'] . '</p>';
+            echo '<p><strong>Contact Email:</strong> ' . $job['contactEmail'] . '</p>';
+            echo '<p><a href="' . $job['applicationLink'] . '">Apply Now</a></p>';
+            echo '</li>';
+        }
+        ?>
+    </ul>
+</body>
+</html>

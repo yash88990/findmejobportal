@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <!-- You can link to a CSS file for styling here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Post a Job</h1>
+
+
+    <div class="postajob">
+    <!-- Job Posting Form -->
+    <form id="jobPostingForm" action="submit_job.php" method="POST">
+        <label for="jobTitle">Job Title:</label><
+        <input type="text" id="jobTitle" name="jobTitle" required><br>
+        <br>
+        <label for="jobDescription">Job Description:</label>
+        <textarea id="jobDescription" name="jobDescription" rows="4" required></textarea>
+        <br><br><br>
+        <label for="jobLocation">Job Location:</label>
+        <input type="text" id="jobLocation" name="jobLocation" required>
+        <br><br>
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required>
+        <br><br>
+        <label for="contactEmail">Contact Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail" required>
+        <br><br>
+        <label for="applicationLink">Application Link:</label>
+        <input type="url" id="applicationLink" name="applicationLink" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+
+</body>
+</html>

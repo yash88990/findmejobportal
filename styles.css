@@ -1,0 +1,168 @@
+/* Global styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Navigation menu styles */
+header {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Stick it to the top of the viewport */
+    left: 0; /* Stick it to the left of the viewport */
+    width: 100%; /* Full width */
+    height: 70px; /* Increase the height as needed */
+    background-color: blueviolet;
+    z-index: 100; /* Ensure it appears above other content */
+    display: flex; /* Make header a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #007BFF; /* Button background color */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Styling the hero section with a colorful background */
+.hero {
+    background-image: url("img.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This makes the background image fixed while scrolling */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    overflow: hidden; /* Prevent scrollbars if the content overflows */
+    text-align: center; /* Center text content */
+    color: white; /* Text color */
+}
+
+.hero h1 {
+    color: rgb(193, 15, 15);
+    font-family: cursive;
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-top: 100px; /* Adjust the top margin as needed */
+}
+
+.search-bar {
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.search-bar input[type="text"] {
+    width: 300px; /* Adjust the width as needed */
+    padding: 20px; /* Adjust the padding as needed */
+    border: none;
+    border-radius: 20px;
+}
+
+.search-bar button {
+    width: 1.5in;
+    height: 1.5in;
+    background-color:none;
+    color: rgb(11, 11, 11);
+    border: none;
+    border-radius: 50%; /* 50% border-radius creates a circle */
+    padding: 0; /* Remove padding if not needed */
+}
+
+
+
+
+/* Styling for the registration page */
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#heading {
+    text-align: center;
+}
+
+/* Styling for the contact us page */
+.contactus {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the post a job page */
+.postajob {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the login page */
+.login {
+    margin-top: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginbtn {
+    align-items: center;
+    background: rgb(218, 255, 205);
+    border: #53ffc0;
+    margin-left: 100px;
+}
+
+#loginheading {
+    text-align: center;
+    text-decoration: underline;
+    color: brown;
+}
+
+/* Additional styling for the post a job page */
+#jobDescription {
+    text-align: center;
+    /* Additional styles for job description go here */
+}
+
+
+/* Ensure the body takes up the full viewport height */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the footer and push it to the bottom */
+.footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color:navajowhite;
+    color: white;
+    text-align: center;
+}
